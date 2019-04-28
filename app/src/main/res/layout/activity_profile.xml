@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".Modules.ProfileActivity">
+
+    <ImageView
+        android:id="@+id/profile_image1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        />
+
+    <TextView
+        android:text="Display Name"
+        android:id="@+id/profile_name"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:layout_marginBottom="20sp"
+        android:textSize="24sp"
+        android:layout_below="@+id/profile_image1"
+        />
+    <TextView
+        android:text="Status"
+        android:id="@+id/profile_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_name"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/profile_countfriends"
+        android:text="Total Friends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sendrequestbtn"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30sp"/>
+
+    <Button
+        android:id="@+id/sendrequestbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Friend Request"
+        android:layout_above="@+id/declinerequestbtn"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/declinerequestbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="52dp"
+        android:text="Decline Friend Request" />
+
+
+</RelativeLayout>

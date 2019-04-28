@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_single_image2"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:src="@drawable/cwisdefaultavatar"
+        android:layout_margin="10sp"
+        />
+    <TextView
+        android:id="@+id/user_single_name1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80sp"
+        android:layout_marginTop="10sp"
+        android:text="Name"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/user_single_reqtype1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_single_name1"
+        android:layout_marginLeft="80sp"
+        android:layout_marginTop="5sp"
+        android:text="Request_type"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="15sp" />
+
+    <ImageButton
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/check_btn"
+        android:src="@drawable/ic_check_black_24dp2"
+        android:backgroundTint="@color/white"
+        android:layout_toRightOf="@id/user_single_name1"
+        android:layout_marginLeft="130dp"
+
+        android:layout_marginTop="15dp"
+
+        />
+    <ImageButton
+        android:id="@+id/cancel_btn"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/ic_clear_black_24dp2"
+        android:background="@color/white"
+        android:layout_toRightOf="@id/check_btn"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+
+        />
+
+</RelativeLayout>
